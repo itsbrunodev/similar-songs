@@ -62,9 +62,8 @@ async function getAccessToken() {
     };
 
     const accessToken = data.access_token;
-    const expiresAt = Date.now() + (data.expires_in - 10) * 1000;
+    const expiresAt = Date.now() + (data.expires_in - 60) * 1000;
 
-    /* write to local temp.json file */
     if (data.access_token !== tokenData.accessToken)
       tokenData = { accessToken, expiresAt };
 
