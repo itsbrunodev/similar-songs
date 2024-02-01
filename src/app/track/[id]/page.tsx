@@ -148,7 +148,7 @@ export default async function Page({ params }: { params: { id: string } }) {
               </div>
             </div>
             <div className="flex w-full flex-col gap-4 md:max-w-[25%]">
-              <Button className="w-full">Add playlist to Spotify</Button>
+              <Button className="w-full" disabled>Add playlist to Spotify</Button>
               <Link href={track.external_urls.spotify} target="_blank">
                 <Button className="w-full" variant="secondary" tabIndex={-1}>
                   Play on Spotify
