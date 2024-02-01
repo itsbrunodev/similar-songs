@@ -49,6 +49,7 @@ async function getAccessToken() {
       body: new URLSearchParams({
         grant_type: "client_credentials",
       }),
+      cache: "no-store",
     });
 
     const res = await response.json();
