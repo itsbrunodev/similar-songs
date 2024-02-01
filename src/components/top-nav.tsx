@@ -14,7 +14,10 @@ export function TopNavigation() {
         className="w-fit rounded-full"
         variant="secondary"
         size="sm"
-        onClick={() => router.back()}
+        onClick={() => {
+          if (window.history?.length > 1) router.back();
+          else router.replace("/");
+        }}
       >
         <ArrowLeftIcon className="mr-1 inline-flex" size={14} /> Go Back
       </Button>
