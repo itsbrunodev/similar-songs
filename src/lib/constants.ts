@@ -10,7 +10,14 @@ export const FRAMER_FADE_IN_OUT: AnimationProps = {
 export const SPOTIFY_API_URL = "https://api.spotify.com/v1";
 export const SPOTIFY_ACCOUNTS_URL = "https://accounts.spotify.com/api";
 
+export const app = {
+  name: "Similar Songs",
+  description:
+    "Find 50 AI-matched tracks on Spotify that match the vibe of your favorites.",
+} as const;
+
 export const urls = {
+  base: "https://similar-songs.itsbruno.dev",
   spotify: {
     api: {
       tracks: SPOTIFY_API_URL + "/tracks",
