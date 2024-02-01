@@ -17,6 +17,8 @@ import { app, urls } from "@/lib/constants";
 import { ISpotifyTrack } from "@/lib/spotify/types/track";
 import { getSimilarTracks, getTrack } from "@/lib/spotify/utils";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
