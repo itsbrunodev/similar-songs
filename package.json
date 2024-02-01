@@ -1,0 +1,42 @@
+{
+  "name": "similar-songs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@icons-pack/react-simple-icons": "^9.3.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "fontkit": "^2.0.2",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.316.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.5",
+    "pretty-ms": "^9.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "satori": "^0.10.13",
+    "sharp": "^0.33.2",
+    "short-uuid": "^4.2.2",
+    "tailwind-merge": "^2.2.1",
+    "vaul": "^0.8.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
