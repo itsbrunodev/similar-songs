@@ -19,15 +19,12 @@ export function Footer() {
         target="_blank"
       >
         Powered by{" "}
-        <span className="font-medium text-white">
-          <Image
-            className="inline-flex"
-            src={SpotifyFullImage}
-            height={20}
-            width={65}
-            alt="Spotify"
-          />
-        </span>
+        <Image
+          className="inline-flex ml-0.5"
+          src={SpotifyFullImage}
+          height={20}
+          alt="Spotify"
+        />
       </Link>
     </footer>
   );
