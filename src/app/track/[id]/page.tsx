@@ -42,6 +42,7 @@ export async function generateMetadata({
   const images = `${urls.base}${urls.track.replace("[id]", id)}/image`;
 
   return {
+    metadataBase: new URL(urls.base),
     title,
     description,
     openGraph: {
