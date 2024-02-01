@@ -3,8 +3,6 @@ import { Header } from "@/components/header";
 import { BaseLayout } from "@/components/layout/base";
 import { Search } from "@/components/search";
 import { SearchResults } from "@/components/search/results";
-import { TSpotifyResponseWithError } from "@/lib/spotify/types/other";
-import { ISpotifySearch } from "@/lib/spotify/types/search";
 import { searchTrack } from "@/lib/spotify/utils";
 
 export const dynamic = "force-dynamic";
@@ -16,7 +14,9 @@ export default async function Page({
 }) {
   const searchQuery = searchParams?.search;
 
-  async function searchByQuery(): Promise<ReturnType<typeof searchTrack> | null> {
+  async function searchByQuery(): Promise<ReturnType<
+    typeof searchTrack
+  > | null> {
     if (searchQuery) return await searchTrack(searchQuery);
     return new Promise((resolve) => resolve(null));
   }
