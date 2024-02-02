@@ -77,7 +77,7 @@ async function getAccessToken() {
 export async function getTrack(str: string) {
   const accessToken = await getAccessToken();
 
-  const response = await fetch(`${urls.spotify.api.tracks}/${str}`, {
+  const response = await fetch(`${urls.spotify.api.tracks}/${str}?market=US`, {
     headers: { Authorization: `Bearer ${accessToken}` },
   });
 
@@ -97,6 +97,7 @@ export async function searchTrack(
 
   searchParams.set("q", query);
   searchParams.set("type", "track");
+  searchParams.set("market", "US");
 
   if (typeof options.limit === "number")
     searchParams.set("limit", options.limit.toString());
@@ -127,6 +128,7 @@ export async function getSimilarTracks(
 
   searchParams.set("seed_tracks", trackName);
   searchParams.set("seed_artists", trackArtist.join(","));
+  searchParams.set("market", "US");
 
   if (typeof options.limit === "number")
     searchParams.set("limit", options.limit.toString());
