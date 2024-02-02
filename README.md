@@ -9,7 +9,7 @@ Find 50 AI-matched tracks on Spotify that match the vibe of your favorites.
 - User friendly searching
 - _Spotify playlist integration_ (to-do)
 
-### Preview
+## Preview
 
 Here's a preview of what songs similar to another song look like on the website.
 
