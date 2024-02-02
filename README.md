@@ -60,15 +60,7 @@ This happens sometimes due to licensing reasons or because the preview is only a
 
 ---
 
-<a href="https://nextjs.org">
-  <img src="assets/badges/built-with-nextjs.svg" alt="Built with Next.js">
-</a>
-<a href="https://tailwindcss.com">
-  <img src="assets/badges/styled-with-tailwindcss.svg" alt="Styled with Tailwind CSS">
-</a>
-<a href="https://spotify.com">
-  <img src="assets/badges/powered-by-spotify.svg" alt="Powered by Spotify">
-</a>
-<a href="https://similar-songs.itsbruno.dev">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/website_vector.svg" alt="Visit the Website">
-</a>
+<a href="https://nextjs.org"><img src="assets/badges/built-with-nextjs.svg" alt="Built with Next.js"></a>
+<a href="https://tailwindcss.com"><img src="assets/badges/styled-with-tailwindcss.svg" alt="Styled with Tailwind CSS"></a>
+<a href="https://spotify.com"><img src="assets/badges/powered-by-spotify.svg" alt="Powered by Spotify"></a>
+<a href="https://similar-songs.itsbruno.dev"><img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/documentation/website_vector.svg" alt="Visit the Website"></a>
