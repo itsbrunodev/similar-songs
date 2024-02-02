@@ -89,7 +89,7 @@ export default async function Page({ params }: { params: { id: string } }) {
         <CircularMotion
           className="full relative h-[inherit]"
           radius={40}
-          speed={35}
+          speed={15}
         >
           <NextImage
             className="h-[inherit] w-full select-none bg-cover object-cover opacity-30 blur-[128px]"
