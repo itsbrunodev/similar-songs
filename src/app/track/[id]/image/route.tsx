@@ -26,9 +26,7 @@ export async function GET(_: Request, { params }: { params: { id: string } }) {
     (
       <div
         tw="flex flex-col w-full h-full items-start text-zinc-300 bg-[#09090b] relative rounded-none"
-        style={{
-          fontFamily: '"Karla", sans-serif',
-        }}
+        style={{ fontFamily: '"Karla", sans-serif' }}
       >
         <div tw="flex items-center p-4">
           <img

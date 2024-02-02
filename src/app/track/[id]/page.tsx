@@ -77,19 +77,16 @@ export default async function Page({ params }: { params: { id: string } }) {
   const track = await fetchTrack();
 
   if (!track) notFound();
-  else if (track.error) notFound() /* return <>{track.error.message}</> */;
-  else if (!similarTrackList) notFound() /* return <>no similar tracks</> */;
-  else if (similarTrackList.error)
-    notFound() /* return <>{similarTrackList.error.message}</> */;
+  else if (track.error) notFound();
+  else if (!similarTrackList) notFound();
+  else if (similarTrackList.error) notFound();
   else if (!similarTrackList?.tracks || similarTrackList.tracks.length === 0)
-    notFound() /* return <>no similar</> */;
+    notFound();
 
   return (
     <>
       <div className="absolute left-0 top-0 z-0 h-72 w-full">
-        {/* <div className="full relative h-[inherit]"> */}
         <CircularMotion
-          /* className="absolute left-0 top-0 z-0 h-72 w-full" */
           className="full relative h-[inherit]"
           radius={40}
           speed={35}
@@ -105,7 +102,6 @@ export default async function Page({ params }: { params: { id: string } }) {
             priority
           />
         </CircularMotion>
-        {/* </div> */}
       </div>
       <BackToTop />
       <BaseLayout className="relative z-10 md:max-w-4xl">
@@ -148,7 +144,9 @@ export default async function Page({ params }: { params: { id: string } }) {
               </div>
             </div>
             <div className="flex w-full flex-col gap-4 md:max-w-[25%]">
-              <Button className="w-full" disabled>Add playlist to Spotify</Button>
+              <Button className="w-full" disabled>
+                Add playlist to Spotify
+              </Button>
               <Link href={track.external_urls.spotify} target="_blank">
                 <Button className="w-full" variant="secondary" tabIndex={-1}>
                   Play on Spotify

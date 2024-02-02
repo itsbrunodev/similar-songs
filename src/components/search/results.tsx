@@ -6,7 +6,6 @@ import Link from "next/link";
 import { FRAMER_FADE_IN_OUT } from "@/lib/constants";
 import { TSpotifyResponseWithError } from "@/lib/spotify/types/other";
 import { ISpotifySearch } from "@/lib/spotify/types/search";
-import { cn } from "@/lib/utils";
 
 export function SearchResults({
   data,
@@ -32,13 +31,10 @@ export function SearchResults({
     );
 
   return (
-    <div className="flex h-full flex-col overflow-auto rounded-xl bg-zinc-900 p-4 border border-zinc-800 min-h-card z-10">
+    <div className="min-h-card z-10 flex h-full flex-col overflow-auto rounded-xl border border-zinc-800 bg-zinc-900 p-4">
       {data.tracks.items.slice(0, 5).map((track, i) => (
         <Link
-          className={cn(
-            "group flex items-center justify-between rounded-xl p-4 text-zinc-300 transition-all hover:bg-zinc-800"
-            /* track..length === 0 && "opacity-50" */
-          )}
+          className="group flex items-center justify-between rounded-xl p-4 text-zinc-300 transition-all hover:bg-zinc-800"
           href={`/track/${track.id}`}
           key={i}
         >
