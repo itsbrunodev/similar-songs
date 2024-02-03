@@ -4,6 +4,7 @@ Find 50 AI-matched songs on Spotify that match the vibe of your favorites.
 
 ## Features
 
+- Search history
 - Song previews
 - 50 similar songs
 - User friendly searching
