@@ -39,7 +39,7 @@ export async function generateMetadata({
     ? `Songs similar to ${trackData.name} by ${trackData.artist}`
     : app.name;
   const description = app.description;
-  const images = `${urls.base}${urls.track.replace("[id]", id)}/image`;
+  const images = `${urls.base}${urls.song.replace("[id]", id)}/image`;
 
   return {
     metadataBase: new URL(urls.base),
@@ -197,7 +197,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                         }).replace(/\.\d/, "")}
                       </span>
                       <div className="flex items-center gap-2 text-zinc-400">
-                        <Link href={urls.track.replace("[id]", track.id)}>
+                        <Link href={urls.song.replace("[id]", track.id)}>
                           <Button
                             className="p-0"
                             variant="secondary"
@@ -243,7 +243,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                       }).replace(/\.\d/, "")}
                     </span>
                     <div className="flex items-center gap-2 text-zinc-400">
-                      <Link href={urls.track.replace("[id]", track.id)}>
+                      <Link href={urls.song.replace("[id]", track.id)}>
                         <Button
                           className="p-0"
                           variant="secondary"
