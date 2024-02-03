@@ -1,4 +1,4 @@
-import { ISpotifyImage } from "./other";
+import { ISpotifyImage, TSpotifyPagination } from "./other";
 import { ISpotifyPlaylistTrack } from "./track";
 
 export interface ISpotifyPlaylist {
@@ -21,25 +21,7 @@ export interface ISpotifyPlaylist {
   };
   public: boolean;
   snapshot_id: string;
-  tracks: {
-    href: string;
-    limit: number;
-    next: string;
-    offset: number;
-    previous: string;
-    total: number;
-    items: ISpotifyPlaylistTrack[];
-  };
+  tracks: TSpotifyPagination<ISpotifyPlaylistTrack>;
   type: string;
   uri: string;
 }
-
-/* export interface ISpotifyPlaylistTracks {
-  href: string;
-  limit: number;
-  next: string | null;
-  offset: number;
-  previous: string | null;
-  total: number;
-  items: ISpotifyPlaylistTrack[];
-} */
