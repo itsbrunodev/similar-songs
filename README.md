@@ -1,6 +1,6 @@
 # Similar Songs 🎶
 
-Find 50 AI-matched tracks on Spotify that match the vibe of your favorites.
+Find 50 AI-matched songs on Spotify that match the vibe of your favorites.
 
 ## Features
 
@@ -13,7 +13,7 @@ Find 50 AI-matched tracks on Spotify that match the vibe of your favorites.
 
 Here's a preview of what songs similar to another song look like on the website.
 
-<a aria-label="Similar Songs preview" href="https://similar-songs.itsbruno.dev/track/3gY6tiCNsuVi6s8kPV6aQg">
+<a aria-label="Similar Songs preview" href="https://similar-songs.itsbruno.dev/song/3gY6tiCNsuVi6s8kPV6aQg">
   <img src="assets/preview.png">
 </a>
 
