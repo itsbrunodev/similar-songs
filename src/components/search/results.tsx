@@ -3,7 +3,7 @@
 import { ChevronRightIcon, XCircleIcon } from "lucide-react";
 import Link from "next/link";
 
-import { FRAMER_FADE_IN_OUT } from "@/lib/constants";
+import { FRAMER_FADE_IN_OUT, urls } from "@/lib/constants";
 import { TSpotifyResponseWithError } from "@/lib/spotify/types/other";
 import { ISpotifySearch } from "@/lib/spotify/types/search";
 
@@ -35,7 +35,7 @@ export function SearchResults({
       {data.tracks.items.slice(0, 5).map((track, i) => (
         <Link
           className="group flex items-center justify-between rounded-xl p-4 text-zinc-300 transition-all hover:bg-zinc-800"
-          href={`/track/${track.id}`}
+          href={urls.song.replace("[id]", track.id)}
           key={i}
         >
           <div className="flex w-11/12 flex-col">
