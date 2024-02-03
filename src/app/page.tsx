@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { BaseLayout } from "@/components/layout/base";
 import { Search } from "@/components/search";
@@ -25,7 +24,7 @@ export default async function Page({
 
   return (
     <BaseLayout className="my-0">
-      <div className="flex flex-col">
+      <div className="flex h-full flex-col">
         <Header />
         <div className="flex w-full flex-col gap-4">
           {/* searching for tracks */}
@@ -34,7 +33,6 @@ export default async function Page({
           <SearchResults data={searchResults} />
         </div>
       </div>
-      <Footer />
     </BaseLayout>
   );
 }
