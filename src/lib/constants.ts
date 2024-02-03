@@ -13,7 +13,7 @@ export const SPOTIFY_ACCOUNTS_URL = "https://accounts.spotify.com/api";
 export const app = {
   name: "Similar Songs",
   description:
-    "Find 50 AI-matched tracks on Spotify that match the vibe of your favorites.",
+    "Find 50 AI-matched songs on Spotify that match the vibe of your favorites.",
 } as const;
 
 export const urls = {
@@ -28,5 +28,5 @@ export const urls = {
       token: SPOTIFY_ACCOUNTS_URL + "/token",
     },
   },
-  track: "/track/[id]",
+  song: "/song/[id]",
 } as const;
